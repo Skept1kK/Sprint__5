@@ -25,7 +25,3 @@ def create_random_password():
     random_number = generate_random_number(10, 999)
     random_password = f'asd_{random_letters}_{random_number}'
     return random_password
-
-def is_active(driver, locator):
-    element_class = driver.find_element(*locator).get_attribute('class')
-    return 'current' in element_class
